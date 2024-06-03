@@ -7,10 +7,10 @@
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
       "outDir": "./dist",
-      "rootDir": "./src",
+      "rootDir": ".",
       "experimentalDecorators": true,
       "emitDecoratorMetadata": true
     },
-    "include": ["src"]
+    "include": ["src", "ormconfig.ts", "ormconfig.ts"]
   }
   
