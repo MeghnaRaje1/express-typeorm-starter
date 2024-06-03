@@ -1,5 +1,5 @@
 import { DataSource } from "typeorm";
-import { User } from "./entity/User";
+import { User } from "./src/entity/User";
 
 export const AppDataSource = new DataSource({
     type: "postgres",
@@ -13,6 +13,7 @@ export const AppDataSource = new DataSource({
     entities: [User],
     migrations: [],
     subscribers: [],
+    migrationsTableName: "custom_migration_table",
 });
 
 AppDataSource.initialize()
